@@ -33,3 +33,6 @@ C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\obj\Debug\
 C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\obj\Debug\net10.0\WebApi.pdb
 C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\obj\Debug\net10.0\WebApi.genruntimeconfig.cache
 C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\obj\Debug\net10.0\ref\WebApi.dll
+C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\augus\OneDrive\Desktop\Cadastro-super-heroi\SuperHero\WebApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
