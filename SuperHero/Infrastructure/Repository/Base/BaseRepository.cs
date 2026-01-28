@@ -15,24 +15,24 @@ namespace Infrastructure.Repository.Base
             _context = context;
             _dbSet = context.Set<T>();
         }
-        public async Task<List<T>> GetAllAsync()
+        public virtual async Task<List<T>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
         }
 
-        public async Task<T?> GetByIdAsync(int id)
+        public virtual async Task<T?> GetByIdAsync(int id)
         {
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<T> CreateAsync(T entity)
+        public virtual async Task<T> CreateAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<T?> UpdateAsync(T entity)
+        public virtual async Task<T?> UpdateAsync(T entity)
         {
             var existingEntity = await _dbSet.FindAsync(entity.Id);
 
@@ -44,7 +44,7 @@ namespace Infrastructure.Repository.Base
         }
 
 
-        public async Task<bool> DeleteAsync(int id)
+        public virtual async Task<bool> DeleteAsync(int id)
         {
             var entity = await _dbSet.FindAsync(id);
             if (entity == null) return false;

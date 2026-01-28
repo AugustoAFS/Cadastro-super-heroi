@@ -5,6 +5,143 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Herois": {
+      "get": {
+        "tags": [
+          "Herois"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Herois"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeroiRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeroiRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateHeroiRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Herois/{id}": {
+      "get": {
+        "tags": [
+          "Herois"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Herois"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeroiRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeroiRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHeroiRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Herois"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Superpoderes": {
+      "get": {
+        "tags": [
+          "Superpoderes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -47,6 +184,82 @@
   },
   "components": {
     "schemas": {
+      "CreateHeroiRequest": {
+        "required": [
+          "nome",
+          "nomeHeroi"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nomeHeroi": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "superpoderesIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateHeroiRequest": {
+        "required": [
+          "nome",
+          "nomeHeroi"
+        ],
+        "type": "object",
+        "properties": {
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nomeHeroi": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "superpoderesIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "WeatherForecast": {
         "type": "object",
         "properties": {
@@ -73,6 +286,12 @@
     }
   },
   "tags": [
+    {
+      "name": "Herois"
+    },
+    {
+      "name": "Superpoderes"
+    },
     {
       "name": "WeatherForecast"
     }

@@ -8,8 +8,9 @@ namespace Infrastructure.Data.Configurations
 {
     public class HeroisConfiguration : BaseEntityConfiguration<Herois>
     {
-        public void Configure(EntityTypeBuilder<Herois> builder)
+        public override void Configure(EntityTypeBuilder<Herois> builder)
         {
+            base.Configure(builder);
 
             builder.Property(h => h.Nome)
                    .IsRequired()
@@ -21,11 +22,11 @@ namespace Infrastructure.Data.Configurations
             builder.Property(h => h.DataNascimento);
 
             builder.Property(h => h.Altura)
-                   .HasColumnType("decimal(5, 2)")
+                   .HasColumnType("decimal(18, 2)")
                    .IsRequired();
 
             builder.Property(h => h.Peso)
-                .HasColumnType("decimal(5, 2)")
+                .HasColumnType("decimal(18, 2)")
                 .IsRequired();
 
         }
