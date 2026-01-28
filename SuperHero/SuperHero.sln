@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.2.11415.280 d18.0
+VisualStudioVersion = 18.2.11415.280
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 . Domain", "3 . Domain", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 . Application", "2 . Application", "{901C1A6D-F379-45AE-B39A-1EA6FC8D989C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{479CD1CE-9DBE-416F-B981-BCF02B2BEDAF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 . Infrastructure", "4 . Infrastructure", "{479CD1CE-9DBE-416F-B981-BCF02B2BEDAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 . Presentation", "1 . Presentation", "{536F71C3-0682-4B33-A5BD-EED427AB2C2D}"
 EndProject

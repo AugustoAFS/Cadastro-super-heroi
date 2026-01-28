@@ -8,7 +8,9 @@ namespace Domain.Entities
     public class Superpoderes : BaseEntity
     {
         public string Superpoder { get; set; }
-        public string Descricao { get; set; }
+        public string? Descricao { get; set; }
+
+        public virtual ICollection<HeroisSuperpoderes> HeroisSuperpoderes { get; set; }
 
         public Superpoderes(){}
     }

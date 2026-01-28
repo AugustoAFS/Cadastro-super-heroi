@@ -10,6 +10,8 @@ namespace Domain.Entities
         public Decimal Altura { get; set; }
         public Decimal Peso { get; set; }
 
+        public virtual ICollection<HeroisSuperpoderes> HeroisSuperpoderes { get; set; }
+
         public Herois(){}
     }
 }
