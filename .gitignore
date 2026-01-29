@@ -1,0 +1,28 @@
+# Arquivos de build e temporários
+*.log
+*.tmp
+*.temp
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend (.NET)
+SuperHero/**/bin/
+SuperHero/**/obj/
+SuperHero/**/*.user
+SuperHero/.vs/
+
+# Frontend (Angular)
+SuperHero-UI/node_modules/
+SuperHero-UI/dist/
+SuperHero-UI/.angular/
+SuperHero-UI/npm-debug.log
+SuperHero-UI/yarn-error.log
