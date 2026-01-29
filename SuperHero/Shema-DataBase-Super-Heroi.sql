@@ -51,54 +51,55 @@ INSERT INTO Superpoderes (Superpoder, Descricao, Created_At, Flg_Inativo) VALUES
 ('Visão de Raio-X', 'Capacidade de ver através de objetos sólidos.', GETDATE(), 0),
 ('Elasticidade', 'Habilidade de esticar e deformar o corpo.', GETDATE(), 0);
 
-INSERT INTO Herois (Nome, NomeHeroi, DataNascimento, Altura, Peso) VALUES 
-('Bruce Wayne', 'Batman', '1939-05-27', 1.88, 95.0),
-('Clark Kent', 'Superman', '1938-06-18', 1.91, 107.0),
-('Diana Prince', 'Mulher Maravilha', '1941-10-21', 1.83, 75.0),
-('Tony Stark', 'Homem de Ferro', '1970-05-29', 1.85, 82.0),
-('Steve Rogers', 'Capitão América', '1918-07-04', 1.88, 108.0),
-('Peter Parker', 'Homem-Aranha', '2001-08-10', 1.78, 76.0),
-('Thor Odinson', 'Thor', '0965-01-01', 1.98, 290.0),
-('Bruce Banner', 'Hulk', '1969-12-18', 2.50, 635.0),
-('Natasha Romanoff', 'Viúva Negra', '1984-11-22', 1.70, 59.0),
-('Barry Allen', 'Flash', '1989-03-19', 1.83, 88.0);
+INSERT INTO Herois (Nome, NomeHeroi, DataNascimento, Altura, Peso, Created_At, Flg_Inativo) VALUES 
+('Bruce Wayne', 'Batman', '1939-05-27', 1.88, 95.0, GETDATE(), 0),
+('Clark Kent', 'Superman', '1938-06-18', 1.91, 107.0, GETDATE(), 0),
+('Diana Prince', 'Mulher Maravilha', '1941-10-21', 1.83, 75.0, GETDATE(), 0),
+('Tony Stark', 'Homem de Ferro', '1970-05-29', 1.85, 82.0, GETDATE(), 0),
+('Steve Rogers', 'Capitão América', '1918-07-04', 1.88, 108.0, GETDATE(), 0),
+('Peter Parker', 'Homem-Aranha', '2001-08-10', 1.78, 76.0, GETDATE(), 0),
+('Thor Odinson', 'Thor', '0965-01-01', 1.98, 290.0, GETDATE(), 0),
+('Bruce Banner', 'Hulk', '1969-12-18', 2.50, 635.0, GETDATE(), 0),
+('Natasha Romanoff', 'Viúva Negra', '1984-11-22', 1.70, 59.0, GETDATE(), 0),
+('Barry Allen', 'Flash', '1989-03-19', 1.83, 88.0, GETDATE(), 0);
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Superman' 
 AND s.Superpoder IN ('Voo', 'Super Força', 'Visão de Raio-X', 'Velocidade Sobre-humana');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Mulher Maravilha' 
 AND s.Superpoder IN ('Voo', 'Super Força');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Homem de Ferro' 
 AND s.Superpoder IN ('Voo', 'Super Força');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Capitão América' 
 AND s.Superpoder IN ('Super Força', 'Regeneração');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Homem-Aranha' 
 AND s.Superpoder IN ('Super Força', 'Velocidade Sobre-humana', 'Regeneração');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Thor' 
 AND s.Superpoder IN ('Super Força', 'Voo', 'Controle Elemental');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Hulk' 
 AND s.Superpoder IN ('Super Força', 'Regeneração');
 
-INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId)
-SELECT h.Id, s.Id FROM Herois h JOIN Superpoderes s ON 1=1
+INSERT INTO HeroisSuperpoderes (HeroiId, SuperpoderId, Created_At, Flg_Inativo)
+SELECT h.Id, s.Id, GETDATE(), 0 FROM Herois h JOIN Superpoderes s ON 1=1
 WHERE h.NomeHeroi = 'Flash' 
 AND s.Superpoder IN ('Velocidade Sobre-humana', 'Regeneração');
