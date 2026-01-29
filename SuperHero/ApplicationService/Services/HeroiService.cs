@@ -1,7 +1,10 @@
-﻿using ApplicationService.Dtos.Requests.Heroi;
+﻿using ApplicationService.Common;
+using ApplicationService.Dtos.Requests.Heroi;
 using ApplicationService.Dtos.Resposes.Heroi;
 using ApplicationService.Interfaces;
+using ApplicationService.Mappings;
 using Domain.Entities;
+using Domain.Exceptions;
 using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,126 +16,170 @@ namespace ApplicationService.Services
     public class HeroiService : IHeroiService
     {
         private readonly IHeroisRepository _repository;
+        private readonly HeroiMapper _heroiMapper;
+        private readonly SuperpoderMapper _superpoderMapper;
 
-        public HeroiService(IHeroisRepository repository)
+        public HeroiService(IHeroisRepository repository, HeroiMapper heroiMapper, SuperpoderMapper superpoderMapper)
         {
             _repository = repository;
+            _heroiMapper = heroiMapper;
+            _superpoderMapper = superpoderMapper;
         }
 
-        public async Task<List<HeroiResponse>> GetAllAAssync()
+        public async Task<ServiceResponse<List<HeroiResponse>>> GetAllAAssync()
         {
+            var serviceResponse = new ServiceResponse<List<HeroiResponse>>();
             var herois = await _repository.GetAllAsync();
-            return herois.Select(MapToResponse).ToList();
+            serviceResponse.Data = _heroiMapper.MapToResponseList(herois);
+            return serviceResponse;
         }
 
-        public async Task<HeroiResponse> GetByIdAsync(int id)
+        public async Task<ServiceResponse<HeroiResponse>> GetByIdAsync(int id)
         {
+            var serviceResponse = new ServiceResponse<HeroiResponse>();
             var heroi = await _repository.GetByIdAsync(id);
-            if (heroi == null) return null;
+            
+            if (heroi == null)
+            {
+                serviceResponse.Success = false;
+                serviceResponse.Message = $"Super-herói com Id {id} não encontrado.";
+                serviceResponse.StatusCode = 404;
+                return serviceResponse;
+            }
 
-            return MapToResponse(heroi);
+            serviceResponse.Data = _heroiMapper.MapToResponse(heroi);
+            return serviceResponse;
         }
 
-        public async Task<HeroiResponse> CreateAsync(CreateHeroiRequest request)
+        public async Task<ServiceResponse<HeroiResponse>> CreateAsync(CreateHeroiRequest request)
         {
+            var serviceResponse = new ServiceResponse<HeroiResponse>();
+
             if (request == null)
             {
-                throw new ArgumentNullException(nameof(request), "Para criar um heroi as informações dele não podem ser nulas");
+                serviceResponse.Success = false;
+                serviceResponse.Message = "Para criar um heroi as informações dele não podem ser nulas";
+                serviceResponse.StatusCode = 400;
+                return serviceResponse;
             }
 
             if (await _repository.ExisteHeroiComNomeAsync(request.NomeHeroi))
             {
-                throw new Exception("Já existe um herói cadastrado com este nome de herói.");
+                serviceResponse.Success = false;
+                serviceResponse.Message = "Já existe um herói cadastrado com este nome de herói.";
+                serviceResponse.StatusCode = 400;
+                return serviceResponse;
             }
 
-            var heroi = new Herois
+            var heroi = _heroiMapper.MapFromCreateRequest(request);
+            
+            if (heroi.DataNascimento.HasValue && heroi.DataNascimento.Value < new DateTime(1753, 1, 1))
             {
-                Nome = request.Nome,
-                NomeHeroi = request.NomeHeroi,
-                DataNascimento = request.DataNascimento,
-                Altura = request.Altura,
-                Peso = request.Peso,
-                Created_At = DateTime.Now,
-                HeroisSuperpoderes = new List<HeroisSuperpoderes>()
-            };
+                heroi.DataNascimento = null;
+            }
 
-            if (request.SuperpoderesIds != null)
+            if (request.SuperpoderesIds != null && request.SuperpoderesIds.Any())
             {
+                heroi.HeroisSuperpoderes = new List<HeroisSuperpoderes>();
                 foreach (var superpoderId in request.SuperpoderesIds)
                 {
                     heroi.HeroisSuperpoderes.Add(new HeroisSuperpoderes
                     {
-                        SuperpoderId = superpoderId,
-                        Created_At = DateTime.Now
+                        SuperpoderId = superpoderId
                     });
                 }
             }
 
             var criado = await _repository.CreateAsync(heroi);
             
-            return await GetByIdAsync(criado.Id);
+            var result = await GetByIdAsync(criado.Id);
+            serviceResponse.Data = result.Data;
+            serviceResponse.StatusCode = 201;
+            return serviceResponse;
         }
 
-        public async Task<HeroiResponse> UpdateAsync(int id, UpdateHeroiRequest request)
+        public async Task<ServiceResponse<HeroiResponse>> UpdateAsync(int id, UpdateHeroiRequest request)
         {
-            if (request == null) throw new ArgumentNullException(nameof(request));
+            var serviceResponse = new ServiceResponse<HeroiResponse>();
+
+            if (request == null)
+            {
+                 serviceResponse.Success = false;
+                 serviceResponse.Message = "Request nulo.";
+                 serviceResponse.StatusCode = 400;
+                 return serviceResponse;
+            }
 
             var heroi = await _repository.GetByIdAsync(id);
-            if (heroi == null) throw new Exception("Herói não encontrado.");
+            if (heroi == null)
+            {
+                serviceResponse.Success = false;
+                serviceResponse.Message = "Herói não encontrado.";
+                serviceResponse.StatusCode = 404;
+                return serviceResponse;
+            }
 
             if (await _repository.ExisteHeroiComNomeAsync(request.NomeHeroi, id))
             {
-                throw new Exception("Já existe outro herói cadastrado com este nome de herói.");
+                serviceResponse.Success = false;
+                serviceResponse.Message = "Já existe outro herói cadastrado com este nome de herói.";
+                serviceResponse.StatusCode = 400;
+                return serviceResponse;
             }
 
             heroi.Nome = request.Nome;
             heroi.NomeHeroi = request.NomeHeroi;
             heroi.DataNascimento = request.DataNascimento;
+            
+            if (heroi.DataNascimento.HasValue && heroi.DataNascimento.Value < new DateTime(1753, 1, 1))
+            {
+                heroi.DataNascimento = null;
+            }
+
             heroi.Altura = request.Altura;
             heroi.Peso = request.Peso;
 
             if (request.SuperpoderesIds != null)
             {
-                heroi.HeroisSuperpoderes.Clear();
+                if (heroi.HeroisSuperpoderes == null)
+                    heroi.HeroisSuperpoderes = new List<HeroisSuperpoderes>();
+                else
+                    heroi.HeroisSuperpoderes.Clear();
+
                 foreach (var superpoderId in request.SuperpoderesIds)
                 {
                     heroi.HeroisSuperpoderes.Add(new HeroisSuperpoderes
                     {
-                        SuperpoderId = superpoderId,
-                        Created_At = DateTime.Now,
-                        HeroiId = heroi.Id
+                        SuperpoderId = superpoderId
                     });
                 }
             }
 
             await _repository.UpdateAsync(heroi);
             
-            return await GetByIdAsync(id);
+            var result = await GetByIdAsync(id);
+            serviceResponse.Data = result.Data;
+            return serviceResponse;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<ServiceResponse<bool>> DeleteAsync(int id)
         {
+             var serviceResponse = new ServiceResponse<bool>();
              var heroi = await _repository.GetByIdAsync(id);
-             if (heroi == null) throw new Exception("Herói não encontrado.");
+             
+             if (heroi == null)
+             {
+                 serviceResponse.Success = false;
+                 serviceResponse.Message = "Herói não encontrado.";
+                 serviceResponse.StatusCode = 404;
+                 return serviceResponse;
+             }
 
-             return await _repository.DeleteAsync(id);
+             await _repository.DeleteAsync(id);
+             serviceResponse.Data = true;
+             return serviceResponse;
         }
 
-        private HeroiResponse MapToResponse(Herois heroi)
-        {
-            return new HeroiResponse
-            {
-                Id = heroi.Id,
-                Nome = heroi.Nome,
-                NomeHeroi = heroi.NomeHeroi,
-                DataNascimento = heroi.DataNascimento,
-                Altura = heroi.Altura,
-                Peso = heroi.Peso,
-                Superpoderes = heroi.HeroisSuperpoderes?
-                    .Select(hs => hs.Superpoder?.Superpoder)
-                    .Where(s => s != null)
-                    .ToList() ?? new List<string>()
-            };
-        }
+
     }
 }

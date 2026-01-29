@@ -17,8 +17,8 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var superpoderes = await _superpoderService.GetAllAsync();
-            return Ok(superpoderes);
+            var response = await _superpoderService.GetAllAsync();
+            return Ok(response.Data);
         }
     }
 }

@@ -1,0 +1,79 @@
+:host {
+    display: block;
+    overflow: hidden;
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.inner {
+    --w: 100px;
+    --h: 100px;
+
+    --translateZ: calc((var(--w) + var(--h)) + 200px);
+    --rotateX: 0deg;
+    --perspective: 1000px;
+
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    width: var(--w);
+    height: var(--h);
+    margin-top: calc(var(--h) / -2);
+    margin-left: calc(var(--w) / -2);
+
+    z-index: 2;
+    transform-style: preserve-3d;
+    transform: perspective(var(--perspective)) translateZ(-300px) rotateX(var(--rotateX)) rotateY(0);
+
+    animation: rotating 60s linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: perspective(var(--perspective)) translateZ(-300px) rotateX(var(--rotateX)) rotateY(0);
+    }
+
+    to {
+        transform: perspective(var(--perspective)) translateZ(-300px) rotateX(var(--rotateX)) rotateY(1turn);
+    }
+}
+
+.carousel-item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
+}
+
+
+SH-hero-card {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.error-msg {
+    position: absolute;
+    top: 400px;
+    color: red;
+}

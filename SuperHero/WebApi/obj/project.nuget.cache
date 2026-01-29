@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kn3pLde4wng=",
+  "dgSpecHash": "zxYAL6uNt0k=",
   "success": true,
   "projectFilePath": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\augus\\.nuget\\packages\\microsoft.openapi\\2.3.0\\microsoft.openapi.2.3.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
+    "C:\\Users\\augus\\.nuget\\packages\\riok.mapperly\\4.2.0\\riok.mapperly.4.2.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.0\\swashbuckle.aspnetcore.10.1.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.0\\swashbuckle.aspnetcore.swagger.10.1.0.nupkg.sha512",
     "C:\\Users\\augus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.0\\swashbuckle.aspnetcore.swaggergen.10.1.0.nupkg.sha512",

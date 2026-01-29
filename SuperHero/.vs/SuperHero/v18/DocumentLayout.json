@@ -3,44 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\repository\\superpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\superpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\controllers\\superpoderescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\superpoderescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\repository\\heroissuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\heroissuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\controllers\\heroiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\heroiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\repository\\heroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\heroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\services\\heroiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\services\\heroiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\repository\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\base\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\dtos\\resposes\\superpoder\\superpoderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\dtos\\resposes\\superpoder\\superpoderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\data\\superherodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\superherodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\dtos\\resposes\\heroi\\heroiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\dtos\\resposes\\heroi\\heroiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\data\\configurations\\superpoderesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\configurations\\superpoderesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\dtos\\requests\\heroi\\updateheroirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\dtos\\requests\\heroi\\updateheroirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\data\\configurations\\heroissuperpoderesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\configurations\\heroissuperpoderesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\dtos\\requests\\heroi\\createheroirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\dtos\\requests\\heroi\\createheroirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\data\\configurations\\heroisconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\configurations\\heroisconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\data\\configurations\\base\\baseentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\configurations\\base\\baseentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\interfaces\\isuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\isuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\interfaces\\iheroissuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iheroissuperpoderesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\interfaces\\iheroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iheroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\interfaces\\base\\ibaserpository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\base\\ibaserpository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\entities\\superpoderes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\superpoderes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\entities\\heroissuperpoderes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\heroissuperpoderes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\entities\\herois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\herois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\services\\superpoderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\services\\superpoderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\entities\\herois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\herois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\services\\heroiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\services\\heroiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\mappings\\superpodermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\mappings\\superpodermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\mappings\\heroimapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\mappings\\heroimapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\applicationservice\\interfaces\\isuperpoderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,12 +103,28 @@
       "RelativeMoniker": "D:0:0:{BEFBFE66-E18E-4AFE-A310-700A547C6158}|ApplicationService\\ApplicationService.csproj|solutionrelative:applicationservice\\interfaces\\iheroiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\infrastructure\\repository\\heroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1F475C5-C81C-4E9C-BAFA-152B96DF5CEB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\heroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\domain\\interfaces\\iheroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B24EF562-F246-4DFA-900D-8EE60F5B986C}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iheroisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\middlewares\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\controllers\\superpoderescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\superpoderescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|c:\\users\\augus\\onedrive\\desktop\\cadastro-super-heroi\\superhero\\webapi\\controllers\\heroiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD73AE31-4E96-4529-99EC-504965C185F3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\heroiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,58 +139,227 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Program.cs",
-              "RelativeToolTip": "WebApi\\Program.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwB4AAAAAAAAAAAAAAA==",
+              "Title": "SuperpoderesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\SuperpoderesRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repository\\SuperpoderesRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\SuperpoderesRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repository\\SuperpoderesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:58:20.335Z",
+              "WhenOpened": "2026-01-29T03:52:54.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SuperpoderesController.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\SuperpoderesController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\SuperpoderesController.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\SuperpoderesController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\SuperpoderesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Title": "HeroisSuperpoderesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisSuperpoderesRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repository\\HeroisSuperpoderesRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisSuperpoderesRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repository\\HeroisSuperpoderesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:58:08.432Z",
+              "WhenOpened": "2026-01-29T03:52:52.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HeroisController.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\HeroisController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\HeroisController.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\HeroisController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\HeroisController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAGAAAAAAAAAA==",
+              "Title": "HeroisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repository\\HeroisRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repository\\HeroisRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:58:03.477Z",
+              "WhenOpened": "2026-01-29T03:52:47.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\Base\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repository\\Base\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\Base\\BaseRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repository\\Base\\BaseRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T21:36:32.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SuperpoderResponse.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Resposes\\Superpoder\\SuperpoderResponse.cs",
-              "RelativeDocumentMoniker": "ApplicationService\\Dtos\\Resposes\\Superpoder\\SuperpoderResponse.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Resposes\\Superpoder\\SuperpoderResponse.cs",
-              "RelativeToolTip": "ApplicationService\\Dtos\\Resposes\\Superpoder\\SuperpoderResponse.cs",
+              "Title": "SuperHeroDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\SuperHeroDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\SuperHeroDbContext.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\SuperHeroDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\SuperHeroDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:36.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SuperpoderesConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\SuperpoderesConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Configurations\\SuperpoderesConfiguration.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\SuperpoderesConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Configurations\\SuperpoderesConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:57:54.161Z",
+              "WhenOpened": "2026-01-29T03:52:34.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HeroisSuperpoderesConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\HeroisSuperpoderesConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Configurations\\HeroisSuperpoderesConfiguration.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\HeroisSuperpoderesConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Configurations\\HeroisSuperpoderesConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:32.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HeroisConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\HeroisConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Configurations\\HeroisConfiguration.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\HeroisConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Configurations\\HeroisConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:30.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\Base\\BaseEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Configurations\\Base\\BaseEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Data\\Configurations\\Base\\BaseEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Configurations\\Base\\BaseEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:29.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ISuperpoderesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\ISuperpoderesRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ISuperpoderesRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\ISuperpoderesRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ISuperpoderesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:22.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IHeroisSuperpoderesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisSuperpoderesRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IHeroisSuperpoderesRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisSuperpoderesRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IHeroisSuperpoderesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:21.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IHeroisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IHeroisRepository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IHeroisRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:19.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IBaseRpository.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\Base\\IBaseRpository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\Base\\IBaseRpository.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\Base\\IBaseRpository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\Base\\IBaseRpository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:18.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Domain\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Domain\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:16.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "Domain\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "Domain\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:15.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Superpoderes.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\Superpoderes.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Superpoderes.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\Superpoderes.cs",
+              "RelativeToolTip": "Domain\\Entities\\Superpoderes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:11.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HeroisSuperpoderes.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\HeroisSuperpoderes.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\HeroisSuperpoderes.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\HeroisSuperpoderes.cs",
+              "RelativeToolTip": "Domain\\Entities\\HeroisSuperpoderes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:09.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Herois.cs",
               "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\Herois.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Herois.cs",
@@ -130,124 +367,176 @@
               "RelativeToolTip": "Domain\\Entities\\Herois.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T03:33:30.228Z",
+              "WhenOpened": "2026-01-29T03:52:07.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Base\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Entities\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "Domain\\Entities\\Base\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:52:06.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "SuperpoderService.cs",
               "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\SuperpoderService.cs",
               "RelativeDocumentMoniker": "ApplicationService\\Services\\SuperpoderService.cs",
               "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\SuperpoderService.cs",
               "RelativeToolTip": "ApplicationService\\Services\\SuperpoderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:47:33.102Z",
+              "WhenOpened": "2026-01-29T03:51:59.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HeroiService.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\HeroiService.cs",
-              "RelativeDocumentMoniker": "ApplicationService\\Services\\HeroiService.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\HeroiService.cs",
-              "RelativeToolTip": "ApplicationService\\Services\\HeroiService.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAwwIQAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "SuperpoderMapper.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Mappings\\SuperpoderMapper.cs",
+              "RelativeDocumentMoniker": "ApplicationService\\Mappings\\SuperpoderMapper.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Mappings\\SuperpoderMapper.cs",
+              "RelativeToolTip": "ApplicationService\\Mappings\\SuperpoderMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:34:45.316Z",
+              "WhenOpened": "2026-01-29T03:51:40.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateHeroiRequest.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Requests\\Heroi\\CreateHeroiRequest.cs",
-              "RelativeDocumentMoniker": "ApplicationService\\Dtos\\Requests\\Heroi\\CreateHeroiRequest.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Requests\\Heroi\\CreateHeroiRequest.cs",
-              "RelativeToolTip": "ApplicationService\\Dtos\\Requests\\Heroi\\CreateHeroiRequest.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBEAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "HeroiMapper.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Mappings\\HeroiMapper.cs",
+              "RelativeDocumentMoniker": "ApplicationService\\Mappings\\HeroiMapper.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Mappings\\HeroiMapper.cs",
+              "RelativeToolTip": "ApplicationService\\Mappings\\HeroiMapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:28:21.566Z",
+              "WhenOpened": "2026-01-29T03:51:37.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HeroiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Resposes\\Heroi\\HeroiResponse.cs",
-              "RelativeDocumentMoniker": "ApplicationService\\Dtos\\Resposes\\Heroi\\HeroiResponse.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Resposes\\Heroi\\HeroiResponse.cs",
-              "RelativeToolTip": "ApplicationService\\Dtos\\Resposes\\Heroi\\HeroiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:28:42.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateHeroiRequest.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Requests\\Heroi\\UpdateHeroiRequest.cs",
-              "RelativeDocumentMoniker": "ApplicationService\\Dtos\\Requests\\Heroi\\UpdateHeroiRequest.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Dtos\\Requests\\Heroi\\UpdateHeroiRequest.cs",
-              "RelativeToolTip": "ApplicationService\\Dtos\\Requests\\Heroi\\UpdateHeroiRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:42:29.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "ISuperpoderService.cs",
               "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Interfaces\\ISuperpoderService.cs",
               "RelativeDocumentMoniker": "ApplicationService\\Interfaces\\ISuperpoderService.cs",
               "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Interfaces\\ISuperpoderService.cs",
               "RelativeToolTip": "ApplicationService\\Interfaces\\ISuperpoderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:47:12.129Z",
+              "WhenOpened": "2026-01-29T03:51:35.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "IHeroiService.cs",
               "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Interfaces\\IHeroiService.cs",
               "RelativeDocumentMoniker": "ApplicationService\\Interfaces\\IHeroiService.cs",
               "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Interfaces\\IHeroiService.cs",
               "RelativeToolTip": "ApplicationService\\Interfaces\\IHeroiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:34:31.093Z",
+              "WhenOpened": "2026-01-29T03:51:32.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HeroisRepository.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repository\\HeroisRepository.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Infrastructure\\Repository\\HeroisRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repository\\HeroisRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:33:35.418Z",
+              "DocumentIndex": 26,
+              "Title": "WebApi.http",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\WebApi.http",
+              "RelativeDocumentMoniker": "WebApi\\WebApi.http",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\WebApi.http",
+              "RelativeToolTip": "WebApi\\WebApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-29T03:51:10.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IHeroisRepository.cs",
-              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IHeroisRepository.cs",
-              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\Domain\\Interfaces\\IHeroisRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IHeroisRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "HeroiService.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\HeroiService.cs",
+              "RelativeDocumentMoniker": "ApplicationService\\Services\\HeroiService.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\ApplicationService\\Services\\HeroiService.cs",
+              "RelativeToolTip": "ApplicationService\\Services\\HeroiService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAowIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T02:33:20.105Z",
+              "WhenOpened": "2026-01-29T02:38:18.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-29T03:51:04.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "WebApi\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "WebApi\\Middlewares\\GlobalExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:50:59.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SuperpoderesController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\SuperpoderesController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\SuperpoderesController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\SuperpoderesController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\SuperpoderesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:50:18.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HeroisController.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\HeroisController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\HeroisController.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Controllers\\HeroisController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\HeroisController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:50:12.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\augus\\OneDrive\\Desktop\\Cadastro-super-heroi\\SuperHero\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:38:29.788Z",
               "EditorCaption": ""
             }
           ]

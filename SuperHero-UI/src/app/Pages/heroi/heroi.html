@@ -1,0 +1,23 @@
+<div class="heroi-container">
+    <h2>Lista de Super Heróis</h2>
+
+    @if (herois.isLoading()) {
+    <SH-loader></SH-loader>
+    }
+
+    @if (herois.error() || errorStatus) {
+    <SH-error-display [statusCode]="errorStatus || 500"
+        [message]="errorMessage || 'Ocorreu um erro ao carregar os dados.'" [details]="errorDetails"
+        [errors]="errorValidation" (retry)="reloadPage()">
+    </SH-error-display>
+    }
+
+    @if (herois.value()) {
+    <div class="cards-grid">
+        @for (hero of herois.value(); track hero.id) {
+        <SH-hero-card [hero]="hero" [showActions]="true" (onEdit)="editHero($event)"
+            (onDelete)="deleteHero($event)"></SH-hero-card>
+        }
+    </div>
+    }
+</div>

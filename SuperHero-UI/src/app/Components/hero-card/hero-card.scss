@@ -1,0 +1,238 @@
+.card {
+    width: 195px;
+    height: 285px;
+    background: #313131;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.img-container {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    width: 100px;
+    height: 100%;
+}
+
+.textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.textBox>.text {
+    font-weight: bold;
+}
+
+.textBox>.head {
+    font-size: 20px;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.textBox>.price {
+    font-size: 15px;
+    margin: 0;
+}
+
+.textBox>span {
+    font-size: 12px;
+    color: lightgrey;
+}
+
+.card:hover>.textBox {
+    opacity: 1;
+}
+
+.card:hover>.img-container {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.btn-edit {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #005f99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgb(12, 12, 12);
+    transition-duration: .3s;
+    padding: 0;
+
+    .Layer {
+        width: 40px;
+        position: absolute;
+        left: -30px;
+        transition-duration: .3s;
+        animation: spin 5s linear infinite;
+        height: 100%;
+    }
+
+    .text {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        position: absolute;
+        z-index: 2;
+        transition-duration: .1s;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(2px);
+        box-shadow: 2px 2px 0px black;
+
+        .Layer {
+            left: 0%;
+            width: 100%;
+        }
+
+        .text {
+            color: transparent;
+        }
+    }
+
+    .cls-1 {
+        fill: #242021;
+    }
+
+    .cls-2 {
+        fill: #e82728;
+    }
+
+    .cls-3 {
+        fill: #fefefe;
+    }
+
+    .cls-4 {
+        fill: #e92728;
+    }
+
+    .cls-5 {
+        fill: #005f99;
+    }
+
+    .cls-6 {
+        fill: #fff;
+    }
+}
+
+.btn-delete {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: rgb(231, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgb(12, 12, 12);
+    transition-duration: .3s;
+    padding: 0;
+
+    .layer {
+        width: 60px;
+        position: absolute;
+        left: -30px;
+        transition-duration: .3s;
+        fill: #ffaf02;
+        height: 100%;
+    }
+
+    p {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        position: absolute;
+        z-index: 2;
+        transition-duration: .1s;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(2px);
+        box-shadow: 2px 2px 0px rgb(0, 0, 0);
+
+        .layer {
+            left: 0%;
+            width: 100%;
+        }
+
+        p {
+            color: transparent;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

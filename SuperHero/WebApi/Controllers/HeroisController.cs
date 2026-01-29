@@ -18,38 +18,50 @@ namespace WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var herois = await _heroiService.GetAllAAssync();
-            return Ok(herois);
+            var response = await _heroiService.GetAllAAssync();
+            return Ok(response.Data);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var heroi = await _heroiService.GetByIdAsync(id);
-            return Ok(heroi);
+            var response = await _heroiService.GetByIdAsync(id);
+            if (!response.Success)
+            {
+                return StatusCode(response.StatusCode, new { message = response.Message, statusCode = response.StatusCode });
+            }
+            return Ok(response.Data);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateHeroiRequest request)
         {
-            var heroi = await _heroiService.CreateAsync(request);
-            return CreatedAtAction(nameof(GetById), new { id = heroi.Id }, heroi);
+            var response = await _heroiService.CreateAsync(request);
+            if (!response.Success)
+            {
+                return StatusCode(response.StatusCode, new { message = response.Message, statusCode = response.StatusCode });
+            }
+            return CreatedAtAction(nameof(GetById), new { id = response.Data.Id }, response.Data);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateHeroiRequest request)
         {
-            var heroi = await _heroiService.UpdateAsync(id, request);
-            return Ok(heroi);
+            var response = await _heroiService.UpdateAsync(id, request);
+            if (!response.Success)
+            {
+                return StatusCode(response.StatusCode, new { message = response.Message, statusCode = response.StatusCode });
+            }
+            return Ok(response.Data);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _heroiService.DeleteAsync(id);
-            if (!deleted)
+            var response = await _heroiService.DeleteAsync(id);
+             if (!response.Success)
             {
-                return NotFound($"Super-herói com Id {id} não encontrado para exclusão.");
+                return StatusCode(response.StatusCode, new { message = response.Message, statusCode = response.StatusCode });
             }
             return Ok("Super-herói excluído com sucesso.");
         }

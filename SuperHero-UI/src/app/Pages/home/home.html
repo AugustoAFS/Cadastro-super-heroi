@@ -1,0 +1,21 @@
+<div class="home-container">
+    @if (herois.isLoading()) {
+    <SH-loader></SH-loader>
+    }
+
+    @if (herois.error() && !herois.isLoading()) {
+    <div class="error-msg">Erro ao carregar heróis.</div>
+    }
+
+    @if (herois.value()) {
+    <div class="wrapper">
+        <div class="inner" [style.--quantity]="herois.value()?.length">
+            @for (hero of herois.value(); track hero.id; let idx = $index) {
+            <div class="carousel-item" [style.--index]="idx">
+                <SH-hero-card [hero]="hero"></SH-hero-card>
+            </div>
+            }
+        </div>
+    </div>
+    }
+</div>

@@ -6,9 +6,9 @@ namespace Domain.Entities
     {
         public string Nome { get; set; }
         public string NomeHeroi { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public Decimal Altura { get; set; }
-        public Decimal Peso { get; set; }
+        public DateTime? DataNascimento { get; set; }
+        public decimal Altura { get; set; }
+        public decimal Peso { get; set; }
 
         public virtual ICollection<HeroisSuperpoderes> HeroisSuperpoderes { get; set; }
 

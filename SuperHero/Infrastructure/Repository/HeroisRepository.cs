@@ -17,7 +17,8 @@ namespace Infrastructure.Repository
         public override async Task<List<Herois>> GetAllAsync()
         {
             return await _dbSet
-                .Include(h => h.HeroisSuperpoderes)
+                .Where(h => !h.Flg_Inativo)
+                .Include(h => h.HeroisSuperpoderes.Where(hs => !hs.Flg_Inativo))
                 .ThenInclude(hs => hs.Superpoder)
                 .ToListAsync();
         }
@@ -25,9 +26,9 @@ namespace Infrastructure.Repository
         public override async Task<Herois?> GetByIdAsync(int id)
         {
             return await _dbSet
-                .Include(h => h.HeroisSuperpoderes)
+                .Include(h => h.HeroisSuperpoderes.Where(hs => !hs.Flg_Inativo))
                 .ThenInclude(hs => hs.Superpoder)
-                .FirstOrDefaultAsync(h => h.Id == id);
+                .FirstOrDefaultAsync(h => h.Id == id && !h.Flg_Inativo);
         }
 
         public async Task<bool> ExisteHeroiComNomeAsync(string nomeHeroi, int? ignorarId = null)
@@ -40,6 +41,27 @@ namespace Infrastructure.Repository
             }
 
             return await query.AnyAsync(h => h.NomeHeroi == nomeHeroi);
+        }
+
+        public override async Task<bool> DeleteAsync(int id)
+        {
+            var heroi = await GetByIdAsync(id);
+            if (heroi == null) return false;
+
+            heroi.Flg_Inativo = true;
+            heroi.Deleted_At = DateTime.Now;
+
+            if (heroi.HeroisSuperpoderes != null)
+            {
+                foreach (var hs in heroi.HeroisSuperpoderes)
+                {
+                    hs.Flg_Inativo = true;
+                    hs.Deleted_At = DateTime.Now;
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

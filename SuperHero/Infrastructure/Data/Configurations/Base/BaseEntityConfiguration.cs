@@ -11,8 +11,7 @@ namespace Infrastructure.Data.Configurations.Base
         {
             builder.HasKey(b => b.Id);
 
-            builder.Property(b => b.Created_At)
-                .IsRequired();
+            builder.Property(b => b.Created_At);
 
             builder.Property(b => b.Flg_Inativo)
                 .IsRequired();

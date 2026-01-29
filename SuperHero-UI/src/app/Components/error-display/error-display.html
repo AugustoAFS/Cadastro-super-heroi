@@ -1,0 +1,54 @@
+<div class="error-container">
+    <div class="tv-container">
+        <div class="tv-screen">
+            <div class="static"></div>
+            <div class="error-content">
+                <div class="status-code">{{ statusCode }}</div>
+                <div class="error-text">{{ errorType }}</div>
+            </div>
+        </div>
+        <div class="tv-stand"></div>
+    </div>
+
+    @if (validationErrors.length > 0) {
+    <div class="error-message-box">
+        <h3>Erros de validação:</h3>
+        <ul>
+            @for (error of validationErrors; track error) {
+            <li>{{ error }}</li>
+            }
+        </ul>
+    </div>
+    } @else if (message) {
+    <div class="error-message-box">
+        <h3>{{ message }}</h3>
+
+        @if (details) {
+        <button class="details-toggle" (click)="toggleDetails()">
+            {{ showDetails ? '▼ Ocultar detalhes' : '▶ Ver detalhes' }}
+        </button>
+
+        @if (showDetails) {
+        <div class="error-details">
+            <div class="details-section">
+                <strong>Detalhes:</strong>
+                <p>{{ details }}</p>
+            </div>
+        </div>
+        }
+        }
+    </div>
+    }
+
+    <button (click)="onRetry()">
+        Voltar
+        <div id="clip">
+            <div id="leftTop" class="corner"></div>
+            <div id="rightBottom" class="corner"></div>
+            <div id="rightTop" class="corner"></div>
+            <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+    </button>
+</div>

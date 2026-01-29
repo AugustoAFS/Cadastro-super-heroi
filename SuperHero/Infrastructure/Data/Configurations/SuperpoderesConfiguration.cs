@@ -9,8 +9,9 @@ namespace Infrastructure.Data.Configurations
 {
     public class SuperpoderesConfiguration : BaseEntityConfiguration<Superpoderes>
     {
-        public void Configure(EntityTypeBuilder<Superpoderes> builder)
+        public override void Configure(EntityTypeBuilder<Superpoderes> builder)
         {
+            base.Configure(builder);
 
             builder.Property(h => h.Superpoder)
                    .IsRequired()

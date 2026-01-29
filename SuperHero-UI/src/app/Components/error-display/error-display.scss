@@ -1,0 +1,548 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    overflow-y: auto;
+
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+}
+
+.error-container {
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    border: 1px solid #333;
+    max-width: 90vw;
+    width: 100%;
+    min-height: fit-content;
+
+    @media (min-width: 768px) {
+        padding: 40px;
+        gap: 30px;
+        max-width: 600px;
+    }
+}
+
+.tv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tv-screen {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    background: black;
+    border: 8px solid #333;
+    border-radius: 10px;
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.8),
+        inset 0 0 50px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        max-width: 300px;
+        height: 200px;
+        border: 10px solid #333;
+    }
+}
+
+.static {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            #000,
+            #000 1px,
+            #111 1px,
+            #fff 1px,
+            #333 2px);
+    animation: flicker 0.1s steps(20) infinite;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.error-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.status-code {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    text-shadow: 2px 2px 0px #000;
+    font-family: monospace;
+    line-height: 1;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+.error-text {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px black;
+    animation: glitch 0.5s infinite;
+    margin: 5px 0;
+
+    @media (min-width: 768px) {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
+
+.error-message-box {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    h3 {
+        color: #fff;
+        font-size: 1rem;
+        margin: 0 0 15px 0;
+        font-weight: 500;
+        line-height: 1.5;
+        word-break: break-word;
+
+        @media (min-width: 768px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+
+        li {
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.4;
+
+            &::before {
+                content: '•';
+                position: absolute;
+                left: 0;
+                color: var(--color-primary);
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.details-toggle {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: rgba(39, 97, 195, 0.3);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media (min-width: 768px) {
+        font-size: 0.8rem;
+    }
+
+    &:hover {
+        background: rgba(39, 97, 195, 0.5);
+        transform: scale(1.05);
+    }
+}
+
+.error-details {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-height: 120px;
+    overflow-y: auto;
+    width: 100%;
+    animation: slideDown 0.3s ease;
+
+    @media (min-width: 768px) {
+        max-height: 150px;
+        width: 90%;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+        border-radius: 5px;
+    }
+}
+
+.details-section,
+.validation-section {
+    text-align: left;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    strong {
+        color: var(--color-primary);
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 5px;
+
+        @media (min-width: 768px) {
+            font-size: 0.85rem;
+        }
+    }
+
+    p {
+        color: #ccc;
+        font-size: 0.75rem;
+        margin: 0;
+        line-height: 1.4;
+        word-break: break-word;
+
+        @media (min-width: 768px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    ul {
+        margin: 5px 0 0 0;
+        padding-left: 15px;
+
+        @media (min-width: 768px) {
+            padding-left: 20px;
+        }
+
+        li {
+            color: #ccc;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            margin-bottom: 3px;
+            word-break: break-word;
+
+            @media (min-width: 768px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.tv-stand {
+    width: 120px;
+    height: 8px;
+    background: #333;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+
+    @media (min-width: 768px) {
+        width: 150px;
+        height: 10px;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.1;
+        transform: scaleY(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scaleY(1.01);
+    }
+
+    100% {
+        opacity: 0.15;
+        transform: scaleY(0.99);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: skewX(5deg);
+        opacity: 0.9;
+    }
+
+    25% {
+        transform: skewX(-5deg);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: skewX(0deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: skewX(-5deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: skewX(5deg);
+        opacity: 0.9;
+    }
+}
+
+
+button {
+    position: relative;
+    width: 10em;
+    height: 3.5em;
+    outline: none;
+    transition: 0.1s;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ddebf0;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        width: 11em;
+        height: 4em;
+        font-size: 13px;
+    }
+}
+
+#clip {
+    --color: #2761c3;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 4px double var(--color);
+    box-shadow: inset 0px 0px 15px #195480;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+    @media (min-width: 768px) {
+        border: 5px double var(--color);
+    }
+}
+
+.arrow {
+    position: absolute;
+    transition: 0.2s;
+    background-color: #2761c3;
+    top: 35%;
+    width: 11%;
+    height: 30%;
+}
+
+#leftArrow {
+    left: -13.5%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+#rightArrow {
+    -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+    clip-path: polygon(100% 49%, 0 0, 0 100%);
+    left: 102%;
+}
+
+button:hover #rightArrow {
+    background-color: #27c39f;
+    left: -15%;
+    animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+}
+
+button:hover #leftArrow {
+    background-color: #27c39f;
+    left: 103%;
+    animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+}
+
+.corner {
+    position: absolute;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: #2761c3;
+    box-shadow: inset 1px 1px 8px #2781c3;
+    transform: scale(1) rotate(45deg);
+    transition: 0.2s;
+
+    @media (min-width: 768px) {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+#rightTop {
+    top: -1.98em;
+    left: 91%;
+}
+
+#leftTop {
+    top: -1.96em;
+    left: -3.0em;
+}
+
+#leftBottom {
+    top: 2.10em;
+    left: -2.15em;
+}
+
+#rightBottom {
+    top: 45%;
+    left: 88%;
+}
+
+button:hover #leftTop {
+    animation: 0.1s ease-in-out 0.05s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #rightTop {
+    animation: 0.1s ease-in-out 0.15s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #rightBottom {
+    animation: 0.1s ease-in-out 0.25s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #leftBottom {
+    animation: 0.1s ease-in-out 0.35s both changeColor8,
+        0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover .corner {
+    transform: scale(1.25) rotate(45deg);
+}
+
+button:hover #clip {
+    animation: 0.2s ease-in-out 0.55s both greenLight8;
+    --color: #27c39f;
+}
+
+@keyframes changeColor8 {
+    from {
+        background-color: #2781c3;
+    }
+
+    to {
+        background-color: #27c39f;
+    }
+}
+
+@keyframes lightEffect8 {
+    from {
+        box-shadow: 1px 1px 5px #27c39f;
+    }
+
+    to {
+        box-shadow: 0 0 2px #27c39f;
+    }
+}
+
+@keyframes greenLight8 {
+    from {}
+
+    to {
+        box-shadow: inset 0px 0px 32px #27c39f;
+    }
+}
+
+@keyframes leftArrow8 {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes rightArrow8 {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translateX(-10px);
+    }
+}

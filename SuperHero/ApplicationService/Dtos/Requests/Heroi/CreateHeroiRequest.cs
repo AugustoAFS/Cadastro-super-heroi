@@ -13,7 +13,7 @@ namespace ApplicationService.Dtos.Requests.Heroi
         [Required(ErrorMessage = "O nome de herói é obrigatório")]
         public string NomeHeroi { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime? DataNascimento { get; set; }
         public decimal Altura { get; set; }
         public decimal Peso { get; set; }
 

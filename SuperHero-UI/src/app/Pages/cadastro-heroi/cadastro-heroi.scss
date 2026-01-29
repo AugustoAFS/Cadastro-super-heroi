@@ -1,0 +1,331 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.cadastro-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 1.5rem;
+
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: var(--color-text-main);
+
+    h2 {
+        margin-bottom: 1.5rem;
+        color: var(--color-primary);
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
+    }
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #555;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:focus,
+    &:valid {
+        outline: 0;
+        border-bottom-color: var(--color-primary);
+        box-shadow: 0 1px 0 0 var(--color-primary);
+    }
+}
+
+.form-control label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    pointer-events: none;
+    display: flex;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 1rem;
+    min-width: 5px;
+    color: #888;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: var(--color-primary);
+    transform: translateY(-25px);
+    text-shadow: 0 0 5px var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #aaa;
+    }
+
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        color: #fff;
+        font-family: inherit;
+        font-size: 0.9rem;
+        outline: none;
+        transition: all 0.3s;
+
+        &:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 10px rgba(0, 245, 255, 0.2);
+        }
+    }
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        flex: 1;
+    }
+}
+
+.superpoderes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #444;
+        border-radius: 2px;
+    }
+
+    .checkbox-label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 12px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid transparent;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: #ccc;
+        transition: all 0.3s ease;
+        user-select: none;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        &:has(input:checked) {
+            background: rgba(0, 245, 255, 0.15);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: 0 0 8px rgba(0, 245, 255, 0.2);
+            font-weight: bold;
+        }
+    }
+}
+
+.btn-submit {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 12px;
+    background: transparent;
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:hover {
+        color: #000;
+        background: var(--color-primary);
+        box-shadow: 0 0 20px var(--color-primary);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 0 10px var(--color-primary);
+    }
+}
+
+SH-counter {
+    ::ng-deep .container {
+        padding: 5px 10px !important;
+        gap: 10px !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 6px !important;
+
+        &:hover {
+            border-color: var(--color-primary) !important;
+            box-shadow: 0 0 10px rgba(0, 245, 255, 0.2) !important;
+        }
+    }
+
+    ::ng-deep .icon {
+        width: 20px !important;
+        height: 20px !important;
+        color: #888 !important;
+
+        &:hover {
+            color: var(--color-primary) !important;
+        }
+    }
+
+    ::ng-deep .number {
+        color: #fff !important;
+        font-size: 1rem !important;
+    }
+}
+
+.btn-submit {
+    @extend .btn-edit;
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.btn-edit {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #005f99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgb(12, 12, 12);
+    transition-duration: .3s;
+    padding: 0;
+
+    .Layer {
+        width: 40px;
+        position: absolute;
+        left: -30px;
+        transition-duration: .3s;
+        animation: spin 5s linear infinite;
+        height: 100%;
+    }
+
+    .text {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        position: absolute;
+        z-index: 2;
+        transition-duration: .1s;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(2px);
+        box-shadow: 2px 2px 0px black;
+
+        .Layer {
+            left: 0%;
+            width: 100%;
+        }
+
+        .text {
+            color: transparent;
+        }
+    }
+
+    .cls-1 {
+        fill: #242021;
+    }
+
+    .cls-2 {
+        fill: #e82728;
+    }
+
+    .cls-3 {
+        fill: #fefefe;
+    }
+
+    .cls-4 {
+        fill: #e92728;
+    }
+
+    .cls-5 {
+        fill: #005f99;
+    }
+
+    .cls-6 {
+        fill: #fff;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

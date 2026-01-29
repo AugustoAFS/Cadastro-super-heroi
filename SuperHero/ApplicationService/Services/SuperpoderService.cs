@@ -1,5 +1,7 @@
-﻿using ApplicationService.Dtos.Resposes.Superpoder;
+﻿using ApplicationService.Common;
+using ApplicationService.Dtos.Resposes.Superpoder;
 using ApplicationService.Interfaces;
+using ApplicationService.Mappings;
 using Domain.Entities;
 using Domain.Interfaces;
 using System;
@@ -12,20 +14,20 @@ namespace ApplicationService.Services
     public class SuperpoderService : ISuperpoderService
     {
         private readonly ISuperpoderesRepository _repository;
-        public SuperpoderService(ISuperpoderesRepository superpoderesRepository)
+        private readonly SuperpoderMapper _mapper;
+
+        public SuperpoderService(ISuperpoderesRepository superpoderesRepository, SuperpoderMapper mapper)
         {
             _repository = superpoderesRepository;
+            _mapper = mapper;
         }
 
-        public async Task<List<SuperpoderResponse>> GetAllAsync()
+        public async Task<ServiceResponse<List<SuperpoderResponse>>> GetAllAsync()
         {
+            var serviceResponse = new ServiceResponse<List<SuperpoderResponse>>();
             var superpoderes = await _repository.GetAllAsync();
-            return superpoderes.Select(s => new SuperpoderResponse
-            {
-                Id = s.Id,
-                Superpoder = s.Superpoder,
-                Descricao = s.Descricao
-            }).ToList();
+            serviceResponse.Data = _mapper.MapToResponseList(superpoderes);
+            return serviceResponse;
         }
     }
 }

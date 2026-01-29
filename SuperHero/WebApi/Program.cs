@@ -5,6 +5,7 @@ using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
+using WebApi.Middlewares;
 
 namespace WebApi    
 {
@@ -14,24 +15,21 @@ namespace WebApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            
-            // 1. Database Context
             builder.Services.AddDbContext<SuperHeroDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // 2. Repositories
             builder.Services.AddScoped<IHeroisRepository, HeroisRepository>();
             builder.Services.AddScoped<ISuperpoderesRepository, SuperpoderesRepository>();
             builder.Services.AddScoped<IHeroisSuperpoderesRepository, HeroisSuperpoderesRepository>();
 
-            // 3. Services
             builder.Services.AddScoped<IHeroiService, HeroiService>();
             builder.Services.AddScoped<ISuperpoderService, SuperpoderService>();
 
+            builder.Services.AddSingleton<ApplicationService.Mappings.HeroiMapper>();
+            builder.Services.AddSingleton<ApplicationService.Mappings.SuperpoderMapper>();
+
             builder.Services.AddControllers();
 
-            // 4. CORS (Allow Angular)
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAngular",
@@ -53,6 +51,8 @@ namespace WebApi
             app.UseHttpsRedirection();
 
             app.UseCors("AllowAngular");
+
+            app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 
             app.UseAuthorization();
             app.MapControllers();
